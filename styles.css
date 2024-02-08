@@ -16,3 +16,15 @@
     top: 0;
     left: 0;
 }
+
+.no-border {
+    border: none;
+}
+
+.page-link:hover {
+    background: white;
+}
+
+.card{
+    width: 40%;
+}
