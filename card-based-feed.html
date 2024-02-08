@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/a20bb7d309.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="main.js"></script>
 
     <title>Instagram</title>
 </head>
@@ -81,51 +82,54 @@
         </div>
 
         <!-- CARD-BASED BODY -->
+        <!-- CARD 1 -->
         <div class="card mx-auto">
             <div class="p-3">
                 <h2>Lorem ipsum dolor</h2>
                 <h4 class="float-end">08/02</h4>
             </div>
             <img src="https://i.pinimg.com/564x/8f/4f/56/8f4f56c9cc4aaf6b4f17218440d0e9f1.jpg" class="img-fluid">
-            <div class="p-3">
-                <button class="btn"><i class="far fa-heart fa-2x"></i></button>
+            <div class="pt-3">
+                <button class="btn" onclick='like(this.parentNode.parentNode)'><i class="icon far fa-heart fa-2x"></i></button>
                 <button class="btn"><i class="far fa-comment fa-2x"></i></button>
                 <button class="btn"><i class="far fa-paper-plane fa-2x"></i></button>
                 <button class="btn float-end"><i class="far fa-bookmark fa-2x"></i></button>
             </div>
-            <p class="px-3 pt-3"><b>127 likes</b></p>
+            <p class="px-3 pt-3"><b><span class="likes-count">127</span> likes</b></p>
             <p class="px-3"><b>User_name</b> ipsum dolor sit amet consectetur adipisicing elit. Totam tempore ratione eum fugiat nulla earum fugit, voluptates voluptatem accusamus dolore odit, reiciendis voluptatum amet veniam delectus, eaque dolorem tempora! Pariatur?</p>
             <textarea name="comment" cols="30" rows="1" class="form-control no-border" placeholder="Add a comment..."></textarea>
         </div>
+        <!-- CARD 2 -->
         <div class="card mx-auto">
             <div class="p-3">
                 <h2>Lorem ipsum dolor</h2>
                 <h4 class="float-end">08/02</h4>
             </div>
             <img src="https://i.pinimg.com/564x/a8/e1/1f/a8e11f9a94bd5afb99705be858db9a1e.jpg" class="img-fluid">
-            <div class="p-3">
-                <button class="btn"><i class="far fa-heart fa-2x"></i></button>
+            <div class="pt-3">
+                <button class="btn" onclick='like(this.parentNode.parentNode)'><i class="icon far fa-heart fa-2x"></i></button>
                 <button class="btn"><i class="far fa-comment fa-2x"></i></button>
                 <button class="btn"><i class="far fa-paper-plane fa-2x"></i></button>
                 <button class="btn float-end"><i class="far fa-bookmark fa-2x"></i></button>
             </div>
-            <p class="px-3 pt-3"><b>3241 likes</b></p>
+            <p class="px-3 pt-3"><b><span class="likes-count">3241</span> likes</b></p>
             <p class="px-3"><b>User_name</b> ipsum dolor sit amet consectetur adipisicing elit. Totam tempore ratione eum fugiat nulla earum fugit, voluptates voluptatem accusamus dolore odit, reiciendis voluptatum amet veniam delectus, eaque dolorem tempora! Pariatur?</p>
             <textarea name="comment" cols="30" rows="1" class="form-control no-border" placeholder="Add a comment..."></textarea>
         </div>
+        <!-- CARD 3 -->
         <div class="card mx-auto">
             <div class="p-3">
                 <h2>Lorem ipsum dolor</h2>
                 <h4 class="float-end">08/02</h4>
             </div>
             <img src="https://i.pinimg.com/564x/ac/9c/ea/ac9ceacbaeff1a43bc3f509a95a79420.jpg" class="img-fluid">
-            <div class="p-3">
-                <button class="btn"><i class="far fa-heart fa-2x"></i></button>
+            <div class="pt-3">
+                <button class="btn" onclick='like(this.parentNode.parentNode)'><i class="icon far fa-heart fa-2x"></i></button>
                 <button class="btn"><i class="far fa-comment fa-2x"></i></button>
                 <button class="btn"><i class="far fa-paper-plane fa-2x"></i></button>
                 <button class="btn float-end"><i class="far fa-bookmark fa-2x"></i></button>
-            </div>
-            <p class="px-3 pt-3"><b>23 likes</b></p>
+            </div>    
+            <p class="px-3 pt-3"><b><span class="likes-count">23</span> likes</b></p>
             <p class="px-3"><b>User_name</b> ipsum dolor sit amet consectetur adipisicing elit. Totam tempore ratione eum fugiat nulla earum fugit, voluptates voluptatem accusamus dolore odit, reiciendis voluptatum amet veniam delectus, eaque dolorem tempora! Pariatur?</p>
             <textarea name="comment" cols="30" rows="1" class="form-control no-border" placeholder="Add a comment..."></textarea>
         </div>
