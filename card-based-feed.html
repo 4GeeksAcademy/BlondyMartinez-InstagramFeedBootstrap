@@ -84,54 +84,56 @@
         <!-- CARD-BASED BODY -->
         <!-- CARD 1 -->
         <div class="card mx-auto">
-            <div class="p-3">
+            <div class="p-3 d-flex justify-content-between">
                 <h2>Lorem ipsum dolor</h2>
-                <h4 class="float-end">08/02</h4>
+                <h5>08/02</h5>
             </div>
             <img src="https://i.pinimg.com/564x/8f/4f/56/8f4f56c9cc4aaf6b4f17218440d0e9f1.jpg" class="img-fluid">
             <div class="pt-3">
                 <button class="btn" onclick='like(this.parentNode.parentNode)'><i class="icon far fa-heart fa-2x"></i></button>
                 <button class="btn"><i class="far fa-comment fa-2x"></i></button>
                 <button class="btn"><i class="far fa-paper-plane fa-2x"></i></button>
-                <button class="btn float-end"><i class="far fa-bookmark fa-2x"></i></button>
+                <button class="btn float-end"><i class="far fa-bookmark fa-2x" onclick='changeIcon(this)'></i></button>
             </div>
             <p class="px-3 pt-3"><b><span class="likes-count">127</span> likes</b></p>
             <p class="px-3"><b>User_name</b> ipsum dolor sit amet consectetur adipisicing elit. Totam tempore ratione eum fugiat nulla earum fugit, voluptates voluptatem accusamus dolore odit, reiciendis voluptatum amet veniam delectus, eaque dolorem tempora! Pariatur?</p>
-            <textarea name="comment" cols="30" rows="1" class="form-control no-border" placeholder="Add a comment..."></textarea>
+            <p class="px-3 text-gray">View the other 19 comments</p>
+            <textarea name="comment" cols="30" rows="1" class="form-control no-border mb-3" placeholder="Add a comment..."></textarea>
         </div>
         <!-- CARD 2 -->
         <div class="card mx-auto">
-            <div class="p-3">
+            <div class="p-3 d-flex justify-content-between">
                 <h2>Lorem ipsum dolor</h2>
-                <h4 class="float-end">08/02</h4>
+                <h5>08/02</h5>
             </div>
             <img src="https://i.pinimg.com/564x/a8/e1/1f/a8e11f9a94bd5afb99705be858db9a1e.jpg" class="img-fluid">
             <div class="pt-3">
                 <button class="btn" onclick='like(this.parentNode.parentNode)'><i class="icon far fa-heart fa-2x"></i></button>
                 <button class="btn"><i class="far fa-comment fa-2x"></i></button>
                 <button class="btn"><i class="far fa-paper-plane fa-2x"></i></button>
-                <button class="btn float-end"><i class="far fa-bookmark fa-2x"></i></button>
+                <button class="btn float-end"><i class="far fa-bookmark fa-2x" onclick='changeIcon(this)'></i></button>
             </div>
             <p class="px-3 pt-3"><b><span class="likes-count">3241</span> likes</b></p>
             <p class="px-3"><b>User_name</b> ipsum dolor sit amet consectetur adipisicing elit. Totam tempore ratione eum fugiat nulla earum fugit, voluptates voluptatem accusamus dolore odit, reiciendis voluptatum amet veniam delectus, eaque dolorem tempora! Pariatur?</p>
-            <textarea name="comment" cols="30" rows="1" class="form-control no-border" placeholder="Add a comment..."></textarea>
+            <p class="px-3 text-gray">View the other 236 comments</p>
+            <textarea name="comment" cols="30" rows="1" class="form-control no-border mb-3" placeholder="Add a comment..."></textarea>
         </div>
         <!-- CARD 3 -->
         <div class="card mx-auto">
-            <div class="p-3">
+            <div class="p-3 d-flex justify-content-between">
                 <h2>Lorem ipsum dolor</h2>
-                <h4 class="float-end">08/02</h4>
+                <h5>08/02</h5>
             </div>
             <img src="https://i.pinimg.com/564x/ac/9c/ea/ac9ceacbaeff1a43bc3f509a95a79420.jpg" class="img-fluid">
             <div class="pt-3">
                 <button class="btn" onclick='like(this.parentNode.parentNode)'><i class="icon far fa-heart fa-2x"></i></button>
                 <button class="btn"><i class="far fa-comment fa-2x"></i></button>
                 <button class="btn"><i class="far fa-paper-plane fa-2x"></i></button>
-                <button class="btn float-end"><i class="far fa-bookmark fa-2x"></i></button>
+                <button class="btn float-end"><i class="far fa-bookmark fa-2x" onclick='changeIcon(this)'></i></button>
             </div>    
             <p class="px-3 pt-3"><b><span class="likes-count">23</span> likes</b></p>
             <p class="px-3"><b>User_name</b> ipsum dolor sit amet consectetur adipisicing elit. Totam tempore ratione eum fugiat nulla earum fugit, voluptates voluptatem accusamus dolore odit, reiciendis voluptatum amet veniam delectus, eaque dolorem tempora! Pariatur?</p>
-            <textarea name="comment" cols="30" rows="1" class="form-control no-border" placeholder="Add a comment..."></textarea>
+            <textarea name="comment" cols="30" rows="1" class="form-control no-border mb-3" placeholder="Be the first to comment..."></textarea>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
