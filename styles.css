@@ -1,7 +1,3 @@
-.squared-img-container {
-    position:relative;
-    width: 33.33%;
-}
 .squared-img {
     width: 100%;
     height: 0;
@@ -18,7 +14,7 @@
 }
 
 .no-border {
-    border: none;
+    border: none !important;
 }
 
 .page-link:hover {
@@ -31,4 +27,11 @@
 
 .text-gray{
     color:rgb(164, 163, 163);
+}
+
+.nav-tabs .nav-item .nav-link{
+    color: black;
+}
+.nav-tabs .nav-item .nav-link.active{
+    color: #0d6efd;
 }
