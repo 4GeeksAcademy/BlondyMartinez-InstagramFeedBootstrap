@@ -16,14 +16,14 @@
         <!-- NAVIGATION BAR -->
         <div class="row bg-light py-3 px-5">
             <div class="col-6 d-flex align-items-center">
-                <i class="fab fa-instagram fa-2xl me-1"></i>
-                <h3>Instagram</h3>
+                <i class="fab fa-instagram fs-2 me-1"></i>
+                <h3. class="fs-2">Instagram</h3>
             </div>
 
             <div class="col-6 d-flex justify-content-end">
-                <button type="button" class="btn btn-success me-5" data-bs-toggle="modal" data-bs-target="#new-post-modal">Create a new post</button>
-                <button type="button" class="btn btn-secondary dropdown-toggle" id="settings-dropdown" aria-expanded="false" data-bs-toggle="dropdown">
-                    <i class="fa-solid fa-gear"></i>
+                <button type="button" class="btn btn-success me-5 fs-5" data-bs-toggle="modal" data-bs-target="#new-post-modal">Create a new post</button>
+                <button type="button" class="btn btn-secondary dropdown-toggle fs-5" id="settings-dropdown" aria-expanded="false" data-bs-toggle="dropdown">
+                    <i class="fa-solid fa-gear fs-5"></i>
                 </button>
 
                 <!-- SETTINGS DROPDOWN -->
@@ -142,72 +142,78 @@
 
             <!-- CARD-BASED BODY -->
             <div class="tab-pane fade" id="card-content" role="tabpanel" aria-labelledby="card-tab">
-                <!-- CARD 1 -->
-                <div class="card mx-auto mt-3">
-                    <div class="p-3 d-flex justify-content-between">
-                        <h2>Lorem ipsum dolor</h2>
-                        <h5>08/02</h5>
+                <row class="d-flex justify-content-center">
+                    <!-- CARD 1 -->
+                    <div class="card col-11 col-lg-6 mx-auto mt-3">
+                        <div class="p-3 d-flex justify-content-between">
+                            <h2>Lorem ipsum dolor</h2>
+                            <h5>08/02</h5>
+                        </div>
+
+                        <img src="https://i.pinimg.com/564x/8f/4f/56/8f4f56c9cc4aaf6b4f17218440d0e9f1.jpg" class="img-fluid">
+
+                        <div class="pt-3">
+                            <button class="btn" onclick='like(this.parentNode.parentNode)'><i class="icon far fa-heart fa-2x"></i></button>
+                            <button class="btn"><i class="far fa-comment fa-2x"></i></button>
+                            <button class="btn"><i class="far fa-paper-plane fa-2x"></i></button>
+                            <button class="btn float-end"><i class="far fa-bookmark fa-2x" onclick='changeIcon(this)'></i></button>
+                        </div>
+
+                        <p class="px-3 pt-3"><b><span class="likes-count">127</span> likes</b></p>
+                        <p class="px-3"><b>User_name</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempore ratione eum fugiat nulla earum fugit, voluptates voluptatem accusamus dolore odit, reiciendis voluptatum amet veniam delectus, eaque dolorem tempora! Pariatur?</p>
+                        <p class="px-3 text-gray">View the other 19 comments</p>
+                        
+                        <textarea name="comment" cols="30" rows="1" class="form-control no-border mb-3" placeholder="Add a comment..."></textarea>
                     </div>
-
-                    <img src="https://i.pinimg.com/564x/8f/4f/56/8f4f56c9cc4aaf6b4f17218440d0e9f1.jpg" class="img-fluid">
-
-                    <div class="pt-3">
-                        <button class="btn" onclick='like(this.parentNode.parentNode)'><i class="icon far fa-heart fa-2x"></i></button>
-                        <button class="btn"><i class="far fa-comment fa-2x"></i></button>
-                        <button class="btn"><i class="far fa-paper-plane fa-2x"></i></button>
-                        <button class="btn float-end"><i class="far fa-bookmark fa-2x" onclick='changeIcon(this)'></i></button>
-                    </div>
-
-                    <p class="px-3 pt-3"><b><span class="likes-count">127</span> likes</b></p>
-                    <p class="px-3"><b>User_name</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempore ratione eum fugiat nulla earum fugit, voluptates voluptatem accusamus dolore odit, reiciendis voluptatum amet veniam delectus, eaque dolorem tempora! Pariatur?</p>
-                    <p class="px-3 text-gray">View the other 19 comments</p>
-                    
-                    <textarea name="comment" cols="30" rows="1" class="form-control no-border mb-3" placeholder="Add a comment..."></textarea>
-                </div>
+                </row>
                 
-                <!-- CARD 2 -->
-                <div class="card mx-auto mt-3">
-                    <div class="p-3 d-flex justify-content-between">
-                        <h2>Lorem ipsum dolor</h2>
-                        <h5>08/02</h5>
-                    </div>
+                <row class="d-flex justify-content-center"></row>
+                    <!-- CARD 2 -->
+                    <div class="card  col-11 col-lg-6 mx-auto mt-3">
+                        <div class="p-3 d-flex justify-content-between">
+                            <h2>Lorem ipsum dolor</h2>
+                            <h5>08/02</h5>
+                        </div>
 
-                    <img src="https://i.pinimg.com/564x/a8/e1/1f/a8e11f9a94bd5afb99705be858db9a1e.jpg" class="img-fluid">
-                    
-                    <div class="pt-3">
-                        <button class="btn" onclick='like(this.parentNode.parentNode)'><i class="icon far fa-heart fa-2x"></i></button>
-                        <button class="btn"><i class="far fa-comment fa-2x"></i></button>
-                        <button class="btn"><i class="far fa-paper-plane fa-2x"></i></button>
-                        <button class="btn float-end"><i class="far fa-bookmark fa-2x" onclick='changeIcon(this)'></i></button>
+                        <img src="https://i.pinimg.com/564x/a8/e1/1f/a8e11f9a94bd5afb99705be858db9a1e.jpg" class="img-fluid">
+                        
+                        <div class="pt-3">
+                            <button class="btn" onclick='like(this.parentNode.parentNode)'><i class="icon far fa-heart fa-2x"></i></button>
+                            <button class="btn"><i class="far fa-comment fa-2x"></i></button>
+                            <button class="btn"><i class="far fa-paper-plane fa-2x"></i></button>
+                            <button class="btn float-end"><i class="far fa-bookmark fa-2x" onclick='changeIcon(this)'></i></button>
+                        </div>
+                        
+                        <p class="px-3 pt-3"><b><span class="likes-count">3241</span> likes</b></p>
+                        <p class="px-3"><b>User_name</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempore ratione eum fugiat nulla earum fugit, voluptates voluptatem accusamus dolore odit, reiciendis voluptatum amet veniam delectus, eaque dolorem tempora! Pariatur?</p>
+                        <p class="px-3 text-gray">View the other 236 comments</p>
+                        
+                        <textarea name="comment" cols="30" rows="1" class="form-control no-border mb-3" placeholder="Add a comment..."></textarea>
                     </div>
-                    
-                    <p class="px-3 pt-3"><b><span class="likes-count">3241</span> likes</b></p>
-                    <p class="px-3"><b>User_name</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempore ratione eum fugiat nulla earum fugit, voluptates voluptatem accusamus dolore odit, reiciendis voluptatum amet veniam delectus, eaque dolorem tempora! Pariatur?</p>
-                    <p class="px-3 text-gray">View the other 236 comments</p>
-                    
-                    <textarea name="comment" cols="30" rows="1" class="form-control no-border mb-3" placeholder="Add a comment..."></textarea>
                 </div>
-                
-                <!-- CARD 3 -->
-                <div class="card mx-auto mt-3">
-                    <div class="p-3 d-flex justify-content-between">
-                        <h2>Lorem ipsum dolor</h2>
-                        <h5>08/02</h5>
+
+                <row class="d-flex justify-content-center"></row>
+                    <!-- CARD 3 -->
+                    <div class="card  col-11 col-lg-6 mx-auto mt-3">
+                        <div class="p-3 d-flex justify-content-between">
+                            <h2>Lorem ipsum dolor</h2>
+                            <h5>08/02</h5>
+                        </div>
+                        
+                        <img src="https://i.pinimg.com/564x/ac/9c/ea/ac9ceacbaeff1a43bc3f509a95a79420.jpg" class="img-fluid">
+                        
+                        <div class="pt-3">
+                            <button class="btn" onclick='like(this.parentNode.parentNode)'><i class="icon far fa-heart fa-2x"></i></button>
+                            <button class="btn"><i class="far fa-comment fa-2x"></i></button>
+                            <button class="btn"><i class="far fa-paper-plane fa-2x"></i></button>
+                            <button class="btn float-end"><i class="far fa-bookmark fa-2x" onclick='changeIcon(this)'></i></button>
+                        </div>    
+                        
+                        <p class="px-3 pt-3"><b><span class="likes-count">23</span> likes</b></p>
+                        <p class="px-3"><b>User_name</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempore ratione eum fugiat nulla earum fugit, voluptates voluptatem accusamus dolore odit, reiciendis voluptatum amet veniam delectus, eaque dolorem tempora! Pariatur?</p>
+                        
+                        <textarea name="comment" cols="30" rows="1" class="form-control no-border mb-3" placeholder="Be the first to comment..."></textarea>
                     </div>
-                    
-                    <img src="https://i.pinimg.com/564x/ac/9c/ea/ac9ceacbaeff1a43bc3f509a95a79420.jpg" class="img-fluid">
-                    
-                    <div class="pt-3">
-                        <button class="btn" onclick='like(this.parentNode.parentNode)'><i class="icon far fa-heart fa-2x"></i></button>
-                        <button class="btn"><i class="far fa-comment fa-2x"></i></button>
-                        <button class="btn"><i class="far fa-paper-plane fa-2x"></i></button>
-                        <button class="btn float-end"><i class="far fa-bookmark fa-2x" onclick='changeIcon(this)'></i></button>
-                    </div>    
-                    
-                    <p class="px-3 pt-3"><b><span class="likes-count">23</span> likes</b></p>
-                    <p class="px-3"><b>User_name</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempore ratione eum fugiat nulla earum fugit, voluptates voluptatem accusamus dolore odit, reiciendis voluptatum amet veniam delectus, eaque dolorem tempora! Pariatur?</p>
-                    
-                    <textarea name="comment" cols="30" rows="1" class="form-control no-border mb-3" placeholder="Be the first to comment..."></textarea>
                 </div>
             </div>
         </div>
